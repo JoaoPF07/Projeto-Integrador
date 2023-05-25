@@ -4,10 +4,10 @@ import Cabecalho from "../componentes/cabecalho";
 function Sobre() {
   return (
     <div>
-      <Cabecalho/>
+      <Cabecalho />
+      <h1>Jéssica e o PC sofrido</h1>
       <br />
       <br />
- 
     </div>
   );
 }
