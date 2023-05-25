@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Cabeçalho da pagina*/
+
+.cabecalhoinicial {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  background-color: #e1d55e;
+  text-align: center;
+}
+.cabecalho {
+  margin-right: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: #e1d55e;
+  text-align: center;
+  justify-content: left;
+}
+
+/* Rodape da pagina*/
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0;
+  background-color: #e1d55e;
+  position: absolute;
+  width: 100%;
+  height: 25px;
+}
+h2 {
+  bottom: 50%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* Tabela do Menu*/
+.table {
+  display: flex;
+  flex: auto;
+  justify-content: left;
+  margin-left: 10%;
+}
+
+ 
+
+td {
+    padding-top: 10px;
+  background-color: e1d55e;
+  flex-direction: row;
+  width: 300px;
+  justify-content: left;
+  border-spacing: 20px 5px;
+}
+
+b {
+  color: #ffffff;
+}
+
+.mapa {
+  background-color: red;
+  width: 97.5%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.divLogCad {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #8d920a;
+  text-align: center;
+}
+
+.teste {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.divHome {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgHome {
+  border-radius: 5px;
+  width: 500px;
+  height: 700px;
+}
+
+.divCorpoH {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.texto {
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  background-color: #f8efbd;
+}
+
+.divForm {
+  margin-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.botao {
+  color: red;
+}
