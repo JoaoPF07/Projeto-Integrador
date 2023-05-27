@@ -5,8 +5,8 @@ function Sobre() {
   return (
     <div>
       <Cabecalho />
-      <h1>Jéssica e o PC sofrido</h1>
       <br />
+      <h1>Teste sofrido</h1>
       <br />
     </div>
   );
