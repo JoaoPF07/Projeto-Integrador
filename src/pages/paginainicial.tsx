@@ -6,26 +6,31 @@ import CabeçalhoInicial from "../componentes/cabecalhoinicial";
 function PaginaInicial () {
 
     return (
-        <div>
-         <div>
+  <div>
+      <div>
         <CabeçalhoInicial />
-
       </div>
-      <div className="divCorpoH">
+        <div className="divCorpoH">
         <div className="texto">
           <h1>Página em produção</h1> <br />
           <p>Sobre o Projeto</p>
         </div>
-        <img
-          className="imgHome"
-          src="\img_inicial.jpg"
-        />
-      </div>
+
+          <div style={{
+            backgroundImage: `url('/img_inicial.jpg')`,
+            backgroundPosition : "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",}}
+
+            className =" imgHome"
+            >
+
+          </div>
+       </div>
       <div>
         <Rodape />
       </div>
-           
-        </div>
+           </div>
     )
 }
 

@@ -16,6 +16,8 @@ function Login (){
       </div>
       <br />
       <br />
+      <div className="FundoLogin">
+      <div className="divForm">
       <Form>
     <FormGroup floating>
       <Input
@@ -45,7 +47,11 @@ function Login (){
       Submit
     </Button>
   </Form>
+  </div>
+  </div>
+      <div>
       <Rodape/>
+      </div>
     </div>
   )
 }
