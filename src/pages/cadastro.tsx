@@ -1,5 +1,6 @@
 import {  Form ,Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
 import Rodape from "../componentes/rodape";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
