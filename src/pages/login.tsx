@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Form ,FormGroup, Input, Label, Button } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cabecalho from "../componentes/cabecalho";
@@ -17,7 +16,10 @@ function Login (){
       <br />
       <br />
       <div className="FundoLogin">
-      <div className="divForm">
+        <div className="divTextoLogin">
+      <div className="textologin">Login da ONG</div>
+      </div>
+      <div className="divFormLogin">
       <Form>
     <FormGroup floating>
       <Input
@@ -43,11 +45,24 @@ function Login (){
       </Label>
     </FormGroup>
     {' '}
-    <Button>
-      Submit
+    <div >
+    <Button className="botao">
+      Entrar
     </Button>
+    </div>
+    <div className="divEsqueceuSenha">
+      <div className="textoesqueceusenha"> Esqueceu a senha?</div>
+    </div>
+    <div>
+      <Button className="botaoCadastrar">
+        <a className="ancora" href="http://localhost:3000/cadastros">
+         Cadastrar
+         </a>
+      </Button>
+    </div>
   </Form>
   </div>
+  
   </div>
       <div>
       <Rodape/>

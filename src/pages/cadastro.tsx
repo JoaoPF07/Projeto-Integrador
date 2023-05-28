@@ -8,11 +8,11 @@ function Cadastros (){
 
     return (
         <div>
-            <div className="cabecalho">
-
-            </div>
+            <div className="cabecalho"></div>
             <br />
             <br />
+    <div className="divFundoCadastro">
+    <div className="divFormCadastro">
     <Form>
      < Row>
         <Col md={6}>
@@ -125,7 +125,8 @@ function Cadastros (){
     Sign in
   </Button>
 </Form>
-
+</div>
+</div>
 <Rodape/>
         </div>
     )

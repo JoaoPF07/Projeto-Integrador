@@ -22,15 +22,15 @@ function PaginaInicial () {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",}}
 
-            className =" imgHome"
+            className ="imgHome"
             >
 
           </div>
        </div>
-      <div>
-        <Rodape />
-      </div>
-           </div>
+       <div>
+        <Rodape/>
+        </div>      
+  </div>
     )
 }
 
