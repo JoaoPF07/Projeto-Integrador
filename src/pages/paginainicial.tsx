@@ -7,6 +7,7 @@ function PaginaInicial () {
 
     return (
   <div>
+    <div className="divGlobal">
       <div>
         <CabeçalhoInicial />
       </div>
@@ -24,12 +25,12 @@ function PaginaInicial () {
 
             className ="imgHome"
             >
-
           </div>
        </div>
        <div>
         <Rodape/>
         </div>      
+      </div>
   </div>
     )
 }

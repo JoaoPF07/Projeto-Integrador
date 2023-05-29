@@ -11,11 +11,15 @@ function Cadastros (){
             <div className="cabecalho"></div>
             <br />
             <br />
+     <div >
     <div className="divFundoCadastro">
+      <div className="divtextocadastro">
+        <div className="textocadastro1">jhfajdfas</div>
+      </div>
     <div className="divFormCadastro">
     <Form>
-     < Row>
-        <Col md={6}>
+  <Row>
+    <Col md={6}>
       <FormGroup>
         <Label for="exampleEmail">
           Email
@@ -25,17 +29,6 @@ function Cadastros (){
           name="email"
           placeholder="with a placeholder"
           type="email"
-        />
-      </FormGroup>
-      <FormGroup>
-        <Label for="exampleEmail">
-          Cnpj:
-        </Label>
-        <Input
-          id="exampleCNPJ"
-          name="CNPJ"
-          placeholder="with a placeholder"
-          type="number"
         />
       </FormGroup>
     </Col>
@@ -125,6 +118,7 @@ function Cadastros (){
     Sign in
   </Button>
 </Form>
+</div>
 </div>
 </div>
 <Rodape/>

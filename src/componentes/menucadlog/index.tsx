@@ -9,7 +9,7 @@ type Props = {
 function MenuLogCad(menu: Props) {
   return (
     <div>
-    <div className="teste">
+    <div className="divMenu">
       <div className="divLogCad"><Link to={'/cadastros'}>{menu.menu1}</Link></div>
       <div className="divLogCad"><Link to={'/login'}>{menu.menu2}</Link></div>
       </div>

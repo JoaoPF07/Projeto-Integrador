@@ -89,7 +89,7 @@ b {
 .imgHome {
   border-radius: 5px;
   width: 500px;
-  height: 550px;
+  height: 710px;
 }
 
 .divCorpoH {
@@ -175,16 +175,41 @@ b {
 
 .divFormCadastro {
   display: flex;
-  margin: auto;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 10px;
   width: 400px;
-  height: 300px;
 }
 
 .divFundoCadastro {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
+  padding: 0px 50px;
   width: 500px;
-  height: 500px;
-  background-color: red;
+  height: 623px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid ;
+}
+
+.divGlobal{
+      margin: 0 auto;
+    position: relative;
+    zoom: 1;
+}
+
+.divMenu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.divtextocadastro {
+  width: 432px;
+  height: 76px;
+}
+
+.textocadastro1 {
+  text-align: center;
 }
