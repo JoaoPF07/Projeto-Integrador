@@ -115,8 +115,8 @@ function Cadastros (){
       Check me out
     </Label>
   </FormGroup>
-  <div>
-  <Button className="">
+  <div className="divBotaoCadastro">
+  <Button className="botaocadastro">
     Cadastrar-se
   </Button>
   </div>

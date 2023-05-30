@@ -116,6 +116,7 @@ b {
   width: 396px;
   height: 314px;
   margin-top: 22px;
+  padding-top: 30px;
 }
 
 .FundoLogin {
@@ -228,4 +229,20 @@ b {
   color: #606770;
   text-align: center;
   font-size: 15px;
+}
+
+.botaocadastro {
+  width: 332px;
+}
+
+.divBotaoCadastro {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px
+}
+
+.divBotaoCadastrar {
+  display: flex;
+  justify-content: center;
+
 }
