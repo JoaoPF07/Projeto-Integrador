@@ -10,7 +10,6 @@ import Entidade from "./pages/entidade";
 function App() {
   return (
     <div>
-      <hr />
       <div>
         <Routes>
           <Route path="/" element={<PaginaInicial />} />
