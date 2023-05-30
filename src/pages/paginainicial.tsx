@@ -12,6 +12,7 @@ function PaginaInicial () {
         <CabeçalhoInicial />
       </div>
         <div className="divCorpoH">
+       
         <div className="texto">
           <h1>Página em produção</h1> <br />
           <p>Sobre o Projeto</p>

@@ -179,6 +179,7 @@ b {
   justify-content: center;
   margin-top: 10px;
   width: 400px;
+  margin: auto;
 }
 
 .divFundoCadastro {
@@ -186,12 +187,13 @@ b {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 0px 50px;
   width: 500px;
   height: 623px;
   background-color: white;
   border-radius: 8px;
-  border: 1px solid ;
+  border: 1px solid  #dddfe2;
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
 }
 
 .divGlobal{
@@ -206,10 +208,24 @@ b {
 }
 
 .divtextocadastro {
-  width: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
   height: 76px;
+  border-bottom: 1px solid #dddfe2;
 }
 
 .textocadastro1 {
   text-align: center;
+  font-size: 25px;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.textocadastro2 {
+  color: #606770;
+  text-align: center;
+  font-size: 15px;
 }

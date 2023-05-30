@@ -14,7 +14,8 @@ function Cadastros (){
      <div >
     <div className="divFundoCadastro">
       <div className="divtextocadastro">
-        <div className="textocadastro1">jhfajdfas</div>
+        <div className="textocadastro1">Cadastre sua ONG aqui!</div>
+        <div className="textocadastro2">É rapido e fácil</div>
       </div>
     <div className="divFormCadastro">
     <Form>
@@ -114,9 +115,11 @@ function Cadastros (){
       Check me out
     </Label>
   </FormGroup>
-  <Button>
-    Sign in
+  <div>
+  <Button className="">
+    Cadastrar-se
   </Button>
+  </div>
 </Form>
 </div>
 </div>
