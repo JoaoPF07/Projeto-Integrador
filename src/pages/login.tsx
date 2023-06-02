@@ -53,7 +53,7 @@ function Login (){
     <div className="divEsqueceuSenha">
       <div className="textoesqueceusenha"> Esqueceu a senha?</div>
     </div>
-    <div>
+    <div className="divBotaoCadastrar">
       <Button className="botaoCadastrar">
         <a className="ancora" href="http://localhost:3000/cadastros">
          Cadastrar
