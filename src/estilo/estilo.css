@@ -5,13 +5,6 @@
 
 /* Cabeçalho da pagina*/
 
-.cabecalhoinicial {
-  display: flex;
-  justify-content: end;
-  flex-direction: row-reverse;
-  background-color: #e1d55e;
-  text-align: center;
-}
 .cabecalho {
   margin-right: 0;
   width: 100%;
@@ -21,6 +14,12 @@
   background-color: #e1d55e;
   text-align: center;
   justify-content: left;
+  text-decoration: none;
+}
+
+.logcad {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Rodape da pagina*/
@@ -35,7 +34,6 @@
   height: 25px;
 }
 
-
 /* Tabela do Menu*/
 .table {
   display: flex;
@@ -44,10 +42,12 @@
   margin-left: 10%;
 }
 
- 
+.classediv {
+  text-decoration: none;
+}
 
 td {
-    padding-top: 10px;
+  padding-top: 10px;
   background-color: e1d55e;
   flex-direction: row;
   width: 300px;
@@ -79,8 +79,6 @@ b {
   text-align: center;
 }
 
-
-
 .divHome {
   display: flex;
   flex-direction: row;
@@ -109,6 +107,10 @@ b {
   margin-left: 5%;
 }
 
+.bpginicial {
+  color: black;
+}
+
 .divFormLogin {
   display: flex;
   flex-direction: column;
@@ -127,10 +129,8 @@ b {
   border-radius: 8px;
   margin: auto;
   padding: 15px;
-  box-shadow: 3px 4px 14px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   border: 1px solid #dddfe2;
-  
-
 }
 
 .textologin {
@@ -138,7 +138,6 @@ b {
   font-size: 18px;
   text-align: center;
   font-family: monospace;
-
 }
 
 .divTextoLogin {
@@ -148,9 +147,9 @@ b {
   align-items: center;
   margin-top: 10px;
   margin-left: 250px;
-    padding: 2px 0px 5px;
-    width: 396px;
-    height: 22px;
+  padding: 2px 0px 5px;
+  width: 396px;
+  height: 22px;
 }
 
 .divEsqueceuSenha {
@@ -170,8 +169,8 @@ b {
 }
 
 .ancora {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .divFormCadastro {
@@ -194,14 +193,13 @@ b {
   background-color: white;
   border-radius: 8px;
   border: 1px solid #dddfe2;
-  box-shadow: 3px 4px 14px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.divGlobal{
-      margin: 0 auto;
-    position: relative;
-    zoom: 1;
+.divGlobal {
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
 }
 
 .divMenu {
@@ -241,11 +239,10 @@ b {
 .divBotaoCadastro {
   display: flex;
   justify-content: center;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 .divBotaoCadastrar {
   display: flex;
   justify-content: center;
-
 }

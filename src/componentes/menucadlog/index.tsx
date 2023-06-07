@@ -2,16 +2,19 @@ import "./../../estilo/estilo.css";
 import { Link } from "react-router-dom";
 
 type Props = {
-  menu1?: String;
-  menu2?: String;
- 
+  menu3?: String;
+  menu4?: String;
 };
 function MenuLogCad(menu: Props) {
   return (
     <div>
-    <div className="divMenu">
-      <div className="divLogCad"><Link to={'/cadastros'}>{menu.menu1}</Link></div>
-      <div className="divLogCad"><Link to={'/login'}>{menu.menu2}</Link></div>
+      <div className="divMenu">
+        <div className="divLogCad">
+          <Link to={"/cadastros"}>{menu.menu3}</Link>
+        </div>
+        <div className="divLogCad">
+          <Link to={"/login"}>{menu.menu4}</Link>
+        </div>
       </div>
     </div>
   );
