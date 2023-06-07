@@ -6,7 +6,7 @@ import Carrossel from "../componentes/carrossel";
 function PaginaInicial() {
   return (
     <div>
-      <div className="divGlobal">
+      <div >
         <div>
           <CabeçalhoInicial />
         </div>

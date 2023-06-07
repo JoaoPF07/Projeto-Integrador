@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Cadastros() {
   return (
     <div>
+      <div className="divGlobal">
       <div className="cabecalho"></div>
       <br />
       <br />
@@ -105,7 +106,7 @@ function Cadastros() {
           </div>
         </div>
       </div>
-      <Rodape />
+    </div>
     </div>
   );
 }
