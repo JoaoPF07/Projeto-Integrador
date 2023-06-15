@@ -14,9 +14,14 @@ function PaginaInicial() {
           <Carrossel />
         </div>
         <div className="divCorpoH">
+          <div style={{
+         backgroundImage: `url('/logoint.png')`,
+         backgroundPosition: 'center',
+         backgroundSize: 'cover',
+         backgroundRepeat: 'no-repeat',
+}} className="divlogo2"></div>
           <div className="texto">
-            <h1>Sobre o Projeto</h1> <br />
-            <p className="bpginicial">
+            <div className="bpginicial"> 
               O projeto social "Mãos Solidárias" é uma plataforma online que
               conecta ONGs com pessoas interessadas em ajudar. Através dessa
               página, as ONGs divulgam suas necessidades, como doações e
@@ -30,11 +35,8 @@ function PaginaInicial() {
               O objetivo é fortalecer a rede de solidariedade, promover a
               sustentabilidade e impactar positivamente as comunidades atendidas
               pelas ONGs participantes.
-            </p>
+              </div>
           </div>
-        </div>
-        <div>
-          <Rodape />
         </div>
       </div>
     </div>

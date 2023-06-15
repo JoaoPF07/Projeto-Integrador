@@ -1,16 +1,25 @@
+import { Link } from "react-router-dom";
 import Menu from "../menu";
 import MenuLogCad from "../menucadlog";
 
 function Cabecalho() {
   return (
     <div>
-      <div className="logcad">
+      <div>
         <div className="cabecalho">
-          <Menu menu1="Home" menu2=" Area da Entidade" />
+        <Link to={"/"}>
+          <div style={{
+         backgroundImage: `url('/logoint.png')`,
+         backgroundPosition: 'center',
+         backgroundSize: 'cover',
+         backgroundRepeat: 'no-repeat',
+}} className="divlogo"></div>
+        </Link>
+
+          <Menu  menu2=" Area da Entidade" />
         </div>
         <div>
           {" "}
-          <MenuLogCad menu3="Cadastrar" menu4="Login" />
         </div>
       </div>
     </div>
