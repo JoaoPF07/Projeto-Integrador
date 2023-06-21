@@ -1,4 +1,3 @@
-import Rodape from "../componentes/rodape";
 import "../estilo/estilo.css";
 import Carrossel from "../componentes/carrossel";
 import Cabecalho from "../componentes/cabecalho";
@@ -36,6 +35,7 @@ function PaginaInicial() {
               sustentabilidade e impactar positivamente as comunidades atendidas
               pelas ONGs participantes.
               </div>
+              <hr />
           </div>
         </div>
       </div>

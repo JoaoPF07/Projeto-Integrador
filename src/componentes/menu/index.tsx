@@ -15,12 +15,12 @@ function Menu(menu: Props) {
         <table className="table">
           <tr>
             <td>
-              <Link to={"/"}>
+              <Link to={"/userentidade"}>
                 <b>{menu.menu1}</b>
               </Link>
             </td>
             <td>
-              <Link to={"/areadaentidade"}>
+              <Link to={"/login-entidade"}>
                 <b>{menu.menu2}</b>
               </Link>
             </td>

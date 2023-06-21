@@ -1,17 +1,3 @@
 node_modules
 
 
-<div style={{
-backgroundImage: `url('/fundo.jpg')`,
-backgroundPosition: 'center',
-backgroundSize: 'cover',
-backgroundRepeat: 'no-repeat',
-}} className="div_principal"></div>
-
-<div className="div_top"></div>
-<div style={{
-backgroundImage: `url('/formas.png')`,
- backgroundRepeat: 'no-repeat',
- }} className="div_centro">
-
-<div></div>

@@ -15,11 +15,9 @@ function Cabecalho() {
          backgroundRepeat: 'no-repeat',
 }} className="divlogo"></div>
         </Link>
-
-          <Menu  menu2=" Area da Entidade" />
-        </div>
-        <div>
-          {" "}
+          <Menu 
+             menu1="Entidades"
+             menu2=" Area da Entidade" />
         </div>
       </div>
     </div>

@@ -3,10 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Cabecalho from "../componentes/cabecalho";
 import Rodape from "../componentes/rodape";
 
-function Login() {
+function LoginEntidade() {
   return (
     <div>
-      <div className="cabecalho">Login</div>
+      <div className="cabecalho">
+        <Cabecalho/>
+        </div>
       <br />
       <br />
       <div className="FundoLogin">
@@ -56,4 +58,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginEntidade;
