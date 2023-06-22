@@ -1,5 +1,6 @@
 
 export type Entidade = {
+    title: string,
     userId: string,
     id: number,
     nome: string,

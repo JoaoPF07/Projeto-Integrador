@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { Navbar } from "reactstrap";
 import Menu from "../menu";
-import MenuLogCad from "../menucadlog";
+import Teste from "../navbar";
 
 function Cabecalho() {
   return (
@@ -18,6 +19,8 @@ function Cabecalho() {
           <Menu 
              menu1="Entidades"
              menu2=" Area da Entidade" />
+        </div>
+        <div>
         </div>
       </div>
     </div>

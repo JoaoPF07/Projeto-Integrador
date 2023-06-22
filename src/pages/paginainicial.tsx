@@ -1,6 +1,7 @@
 import "../estilo/estilo.css";
 import Carrossel from "../componentes/carrossel";
 import Cabecalho from "../componentes/cabecalho";
+import ContainerEntidade from "../componentes/containerentidade";
 
 function PaginaInicial() {
   return (
@@ -36,6 +37,9 @@ function PaginaInicial() {
               pelas ONGs participantes.
               </div>
               <hr />
+              <br />
+              <ContainerEntidade/>
+              <br />
           </div>
         </div>
       </div>

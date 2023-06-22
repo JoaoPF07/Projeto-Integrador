@@ -1,6 +1,7 @@
 import { type } from "@testing-library/user-event/dist/type";
 import "./../../estilo/estilo.css";
 import { Link } from "react-router-dom";
+import Teste from "../navbar";
 
 type Props = {
   menu1?: String;
@@ -14,20 +15,11 @@ function Menu(menu: Props) {
       <div className="classediv">
         <table className="table">
           <tr>
+         
             <td>
-              <Link to={"/userentidade"}>
-                <b>{menu.menu1}</b>
-              </Link>
-            </td>
-            <td>
-              <Link to={"/login-entidade"}>
-                <b>{menu.menu2}</b>
-              </Link>
-            </td>
-            <td>
-              <Link to={"/sobre"}>
-                <b>{menu.menu3}</b>
-              </Link>
+            <div className="teste">
+          <Teste/>
+          </div>
             </td>
           </tr>
         </table>

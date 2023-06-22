@@ -70,14 +70,7 @@
   text-decoration: none;
 }
 
-td {
-  padding-top: 10px;
-  background-color: e1d55e;
-  flex-direction: row;
-  width: 300px;
-  justify-content: left;
-  border-spacing: 20px 5px;
-}
+
 
 b {
   color: #ffffff;
@@ -282,4 +275,30 @@ b {
 .paglogin {
   background-color: #b0e0e5;
   height: 800px;
+}
+
+.divlista {
+  border: 1px  solid black;
+  border-radius: 8px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+
+.teste2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 500px;
+}
+
+.rowreverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
