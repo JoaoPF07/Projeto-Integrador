@@ -1,6 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
 import "./../../estilo/estilo.css";
-import { Link } from "react-router-dom";
 import Teste from "../navbar";
 
 type Props = {
@@ -15,7 +13,6 @@ function Menu(menu: Props) {
       <div className="classediv">
         <table className="table">
           <tr>
-         
             <td>
             <div className="teste">
           <Teste/>

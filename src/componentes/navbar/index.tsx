@@ -17,9 +17,11 @@ function Teste(props: any) {
   return (
     <div>
       <Navbar color="faded" light>
+        <NavbarBrand href="/" className="me-auto">
+        </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
-        <div className='teste2'>
         <Collapse isOpen={!collapsed} navbar>
+          <div className='divNav'>
           <Nav navbar>
             <NavItem>
               <NavLink href="/components/">Components</NavLink>
@@ -30,8 +32,8 @@ function Teste(props: any) {
               </NavLink>
             </NavItem>
           </Nav>
+          </div>
         </Collapse>
-        </div>
       </Navbar>
     </div>
   );
