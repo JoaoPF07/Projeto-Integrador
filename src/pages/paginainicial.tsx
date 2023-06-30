@@ -6,7 +6,7 @@ import ContainerEntidade from "../componentes/containerentidade";
 function PaginaInicial() {
   return (
     <div>
-      <div >
+      <div>
         <div>
           <Cabecalho />
         </div>
@@ -14,14 +14,17 @@ function PaginaInicial() {
           <Carrossel />
         </div>
         <div className="divCorpoH">
-          <div style={{
-         backgroundImage: `url('/logoint.png')`,
-         backgroundPosition: 'center',
-         backgroundSize: 'cover',
-         backgroundRepeat: 'no-repeat',
-}} className="divlogo2"></div>
+          <div
+            style={{
+              backgroundImage: `url('/logoint.png')`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="divlogo2"
+          ></div>
           <div className="texto">
-            <div className="bpginicial"> 
+            <div className="bpginicial">
               O projeto social "Mãos Solidárias" é uma plataforma online que
               conecta ONGs com pessoas interessadas em ajudar. Através dessa
               página, as ONGs divulgam suas necessidades, como doações e
@@ -35,11 +38,11 @@ function PaginaInicial() {
               O objetivo é fortalecer a rede de solidariedade, promover a
               sustentabilidade e impactar positivamente as comunidades atendidas
               pelas ONGs participantes.
-              </div>
-              <hr />
-              <br />
-              <ContainerEntidade/>
-              <br />
+            </div>
+            <hr />
+            <br />
+            <ContainerEntidade />
+            <br />
           </div>
         </div>
       </div>
