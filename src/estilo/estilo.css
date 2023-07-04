@@ -297,7 +297,7 @@ b {
   flex-direction: row-reverse;
   width: 500px;
   margin-left: 500px;
-  margin-top: 55px
+  margin-top: 55px;
 }
 
 .rowreverse {
@@ -306,6 +306,11 @@ b {
 }
 
 .divNav{
+  display: flex;
   margin-right: 500px;
   margin-bottom: 50px;
+}
+
+.ButtonNav {
+  width: 500px;
 }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "reactstrap";
-import Menu from "../menu";
+import Menu from "../navbar";
 import Teste from "../navbar";
 
 function Cabecalho() {
@@ -16,9 +16,9 @@ function Cabecalho() {
          backgroundRepeat: 'no-repeat',
 }} className="divlogo"></div>
         </Link>
-          <Menu 
-             menu1="Entidades"
-             menu2=" Area da Entidade" />
+        <div className="teste">
+          <Menu />
+        </div>
         </div>
         <div>
         </div>

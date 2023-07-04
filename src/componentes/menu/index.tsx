@@ -7,22 +7,22 @@ type Props = {
   menu3?: String;
 };
 
-function Menu(menu: Props) {
-  return (
-    <div>
-      <div className="classediv">
-        <table className="table">
-          <tr>
-            <td>
-            <div className="teste">
-          <Teste/>
-          </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  );
-}
+// function Menu(menu: Props) {
+//   return (
+//     <div>
+//       <div className="classediv">
+//         <table className="table">
+//           <tr>
+//             <td>
+//             <div className="teste">
+//           <Teste/>
+//           </div>
+//             </td>
+//           </tr>
+//         </table>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default Menu;
+//export default Menu;

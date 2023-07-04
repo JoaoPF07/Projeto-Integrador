@@ -9,7 +9,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-function Teste(props: any) {
+function Menu(props: any) {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -19,18 +19,22 @@ function Teste(props: any) {
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="me-auto">
         </NavbarBrand>
+        <div className='ButtonNav'>
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
+        </div>
         <Collapse isOpen={!collapsed} navbar>
           <div className='divNav'>
           <Nav navbar>
+            <div>
             <NavItem>
               <NavLink href="/components/">Components</NavLink>
             </NavItem>
+            </div>
+            <div>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
+              <NavLink href="https://github.com/reactstrap/reactstrap"> GitHub </NavLink>
             </NavItem>
+            </div>
           </Nav>
           </div>
         </Collapse>
@@ -39,4 +43,4 @@ function Teste(props: any) {
   );
 }
 
-export default Teste;
+export default Menu;
