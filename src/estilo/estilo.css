@@ -217,8 +217,7 @@ b {
   height: 700px;
   background-color: white;
   border-radius: 8px;
-  border: 1px solid #dddfe2;
-  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1)
 }
 
 .divGlobal {
@@ -272,9 +271,9 @@ b {
   justify-content: center;
 }
 
-.paglogin {
+.fundoPagLogCad {
   background-color: #b0e0e5;
-  height: 800px;
+  height: 900px;
 }
 
 .divlista {
@@ -296,7 +295,7 @@ b {
   align-items: flex-end;
   flex-direction: row-reverse;
   width: 500px;
-  margin-left: 500px;
+  margin-left: 800px;
   margin-top: 55px;
 }
 
@@ -312,5 +311,6 @@ b {
 }
 
 .ButtonNav {
+  position: relative;
   width: 500px;
 }

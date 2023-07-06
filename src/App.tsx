@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<PaginaInicial />} />
           <Route path="/areadaentidade" element={<AreaEntidade />} />
           <Route path="/login-entidade" element={<LoginEntidade />} />
-          <Route path="/cadastros" element={<Cadastros />} />
+          <Route path="/cadastro" element={<Cadastros />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/userentidade" element= {<UserEntidade/>}/>
         </Routes>

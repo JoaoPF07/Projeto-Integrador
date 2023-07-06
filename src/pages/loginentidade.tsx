@@ -5,7 +5,7 @@ import Rodape from "../componentes/rodape";
 
 function LoginEntidade() {
   return (
-    <div  className="paglogin">
+    <div  className="fundoPagLogCad">
       <div >
       <div  style={{
          backgroundImage: `url('/logoint.png')`,
