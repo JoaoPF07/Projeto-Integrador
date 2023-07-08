@@ -1,7 +1,50 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
+import { json } from "stream/consumers";
+import { api } from "../api";
 import FormPostEntidade from "../componentes/formpostentidade/formpostentidade";
+import { Entidades } from "../types/entidade";
+
+
 
 function Cadastros() {
+  const [Entidade, setEntidade] = useState <Entidades[]>([])
+
+  const handleInserir = async (
+    email: string,
+    senha: string,
+    nome: string,
+    cnpj: string,
+    endereco: string,
+    complemento: string,
+    cidade: string,
+    estado: string,
+    cep: string
+  ) => {
+
+    let json = await api.AdicionarEntidade(
+      email,
+      senha,
+      nome,
+      cnpj,
+      endereco,
+      complemento,
+      cidade,
+      estado,
+      cep,
+    );
+
+    if(json.id) {
+      alert('Entidade cadastrada com sucesso!')
+      setEntidade((Entidade) => [...Entidade, json]);
+    }else {
+      alert ("Faha ao se cadastrar")
+    }
+
+
+
+  }
+
   return (
     <div className="fundoPagLogCad">
       <div>
@@ -19,7 +62,7 @@ function Cadastros() {
             <div className="textocadastro2">É rapido e fácil</div>
           </div>
           <div>
-            <FormPostEntidade/>
+            <FormPostEntidade onAdd={handleInserir}/>
           </div>
         </div>
       </div>

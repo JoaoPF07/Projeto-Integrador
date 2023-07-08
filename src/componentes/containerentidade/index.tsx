@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Entidade } from "../../types/entidade";
+import { Entidades } from "../../types/entidade";
 import DadosEntidade from "../dadosentidade";
 
 function ContainerEntidade() {
-  const [entidades, setEntidades] = useState<Entidade[]>([]);
+  const [entidades, setEntidades] = useState<Entidades[]>([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

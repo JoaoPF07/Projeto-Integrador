@@ -1,5 +1,5 @@
 
-export type Entidade = {
+export type Entidades = {
     email: string,
     senha: string,
     nome: string,

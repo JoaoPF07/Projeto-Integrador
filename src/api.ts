@@ -12,16 +12,16 @@ export const api = {
     return json;
   },
 
-  AdicionarEntidades: async (
+  AdicionarEntidade: async (
     email: string,
     senha: string,
     nome: string,
-    cnpj: bigint,
+    cnpj: string,
     endereco: string,
     complemento: string,
     cidade: string,
     estado: string,
-    cep: bigint
+    cep: string
   ) => {
     let response = await fetch("", {
       method: "POST",
