@@ -1,10 +1,12 @@
 
 export type Entidade = {
-    title: string,
-    userId: string,
-    id: number,
-    nome: string,
-    endereco: string,
-    telefone: string,
     email: string,
+    senha: string,
+    nome: string,
+    cnpj: string,
+    endereco: string,
+    complemento: string,
+    cidade: string,
+    estado: string,
+    cep: string
 }

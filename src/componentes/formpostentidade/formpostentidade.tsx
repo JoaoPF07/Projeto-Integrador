@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import { useState, ChangeEvent } from "react";
 import { Form, Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
 
@@ -6,16 +7,16 @@ type Props = {
     email: string,
     senha: string,
     nome: string,
-    cnpj: bigint,
+    cnpj: string,
     endereco: string,
     complemento: string,
     cidade: string,
     estado: string,
-    cep: bigint
+    cep: string
   ) => void;
 };
 
-function FormPostEntidade() {
+function FormPostEntidade({ onAdd }: Props) {
   const [Email, setEmail] = useState("");
   const [Senha, setSenha] = useState("");
   const [Nome, setNome] = useState("");
@@ -41,7 +42,7 @@ function FormPostEntidade() {
   const handleCnpjChange = (e: ChangeEvent<HTMLInputElement>) => {
     setCnpj(e.target.value);
   };
-  
+
   const handleEnderecoChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEndereco(e.target.value);
   };
@@ -62,92 +63,99 @@ function FormPostEntidade() {
     setCep(e.target.value);
   };
 
-    function handleClickButton () {
-        
-    }
+  function handleClickButton() {
+    if (
+      Nome &&
+      Email &&
+      Senha &&
+      Cnpj &&
+      Endereco &&
+      Complemento &&
+      Cidade &&
+      Estado &&
+      Cep
+    ) {
+      onAdd(
+        Email,
+        Senha,
+        Nome,
+        Cnpj,
+        Endereco,
+        Complemento,
+        Cidade,
+        Estado,
+        Cep
+      );
+    } else {alert("Preencha todos os campos")}
+  }
 
   return (
     <div>
       <div className="divFormCadastro">
-        <Form>
-          <Row>
-            <Col md={6}>
-              <FormGroup>
-                <Label for="exampleEmail">Email</Label>
-                <Input
-                  id="exampleEmail"
-                  name="email"
-                  placeholder="with a placeholder"
-                  type="email"
-                />
-              </FormGroup>
-            </Col>
-            <Col md={6}>
-              <FormGroup>
-                <Label for="examplePassword">Senha</Label>
-                <Input
-                  id="examplePassword"
-                  name="password"
-                  placeholder="password placeholder"
-                  type="password"
-                />
-              </FormGroup>
-            </Col>
-          </Row>
-          <FormGroup>
-            <Label for="exampleName">Digite o nome da ONG</Label>
-            <Input id="exampleName" name="nameOng" placeholder="Nome da ONG" />
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleCNPJ">CNPJ</Label>
-            <Input id="exampleCNPJ" name="CNPJ" placeholder="Digite o CNPJ" />
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleAddress">Endereço</Label>
-            <Input
-              id="exampleAddress"
-              name="address"
-              placeholder="1234 Main St"
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleAddress2">Complemento</Label>
-            <Input
-              id="exampleAddress2"
-              name="address2"
-              placeholder="Apartment, studio, or floor"
-            />
-          </FormGroup>
-          <Row>
-            <Col md={6}>
-              <FormGroup>
-                <Label for="exampleCity">Cidade</Label>
-                <Input id="exampleCity" name="city" />
-              </FormGroup>
-            </Col>
-            <Col md={4}>
-              <FormGroup>
-                <Label for="exampleState">Estado</Label>
-                <Input id="exampleState" name="state" />
-              </FormGroup>
-            </Col>
-            <Col md={2}>
-              <FormGroup>
-                <Label for="exampleZip">CEP</Label>
-                <Input id="exampleZip" name="zip" />
-              </FormGroup>
-            </Col>
-          </Row>
-          <FormGroup check>
-            <Input id="exampleCheck" name="check" type="checkbox" />
-            <Label check for="exampleCheck">
-              Check me out
-            </Label>
-          </FormGroup>
-          <div className="divBotaoCadastro">
-            <Button className="botaocadastro">Cadastrar-se</Button>
-          </div>
-        </Form>
+        <input
+          type="text"
+          value={Email}
+          placeholder="Digite o email da entidade"
+          onChange={handleEmailChange}
+        />
+
+        <input
+          type="text"
+          value={Senha}
+          placeholder="Digite a senha da entidade"
+          onChange={handleSenhaChange}
+        />
+
+        <input
+          type="text"
+          value={Nome}
+          placeholder="Digite o nome da entidade"
+          onChange={handleNomeChange}
+        />
+
+        <input
+          type="text"
+          value={Cnpj}
+          placeholder="Digite o Cnpj da entidade"
+          onChange={handleCnpjChange}
+        />
+
+        <input
+          type="text"
+          value={Endereco}
+          placeholder="Digite o endereço da entidade"
+          onChange={handleEnderecoChange}
+        />
+
+        <input
+          type="text"
+          value={Complemento}
+          placeholder="Digite o Complemento da entidade"
+          onChange={handleComplementoChange}
+        />
+
+        <input
+          type="text"
+          value={Cidade}
+          placeholder="Digite o Cidade da entidade"
+          onChange={handleCidadeChange}
+        />
+
+        <input
+          type="text"
+          value={Estado}
+          placeholder="Digite o Estado da entidade"
+          onChange={handleEstadoChange}
+        />
+
+        <input
+          type="text"
+          value={Cep}
+          placeholder="Digite o Cep da entidade"
+          onChange={handleCepChange}
+        />
+
+        <button onClick={handleClickButton}>enviar</button>
       </div>
     </div>
   );
