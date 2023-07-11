@@ -62,12 +62,14 @@
 .table {
   display: flex;
   flex: auto;
-  justify-content: left;
+  border-spacing:20px 5px ;
+  justify-content: center;
   margin-left: 10%;
 }
 
 .classediv {
-  text-decoration: none;
+  display: flex;
+  text-align: center;
 }
 
 
@@ -289,14 +291,8 @@ b {
 
 
 
-.teste {
+.divMenuCab {
   display: flex;
-  justify-content: right;
-  align-items: flex-end;
-  flex-direction: row-reverse;
-  width: 500px;
-  margin-left: 800px;
-  margin-top: 55px;
 }
 
 .rowreverse {
@@ -314,3 +310,45 @@ b {
   position: relative;
   width: 500px;
 }
+
+.divMenu1 {
+  width: 200px;
+  padding: 10px;
+  margin-right: 100px;
+  margin-left: 150px;
+  border-radius: 8px;
+  border: dotted #e25c5ced 3px;
+  font-family: cursive;
+
+}
+
+.divMenu2 {
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: cursive;
+  border: dotted #e25c5ced 3px;
+}
+
+.divMenu2 :hover {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+
+
+}
+
+.divMenu1 :hover {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+
+
+}
+
+
+
+
+
