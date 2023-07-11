@@ -91,68 +91,95 @@ function FormPostEntidade({ onAdd }: Props) {
   return (
     <div>
       <div className="divFormCadastro">
-        <input
+
+        <div>
+        <input className="divInputEmail"
           type="text"
           value={Email}
           placeholder="Digite o email da entidade"
-          onChange={handleEmailChange}
+          onChange={handleEmailChange} 
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputSenha"
           type="text"
           value={Senha}
           placeholder="Digite a senha da entidade"
           onChange={handleSenhaChange}
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputNome"
           type="text"
           value={Nome}
           placeholder="Digite o nome da entidade"
           onChange={handleNomeChange}
         />
-
-        <input
+        </div>
+        
+<br/>
+        <div >
+        <input className="divInputCnps"
           type="text"
           value={Cnpj}
           placeholder="Digite o Cnpj da entidade"
           onChange={handleCnpjChange}
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputEndereço"
           type="text"
           value={Endereco}
           placeholder="Digite o endereço da entidade"
           onChange={handleEnderecoChange}
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputComplemento"
           type="text"
           value={Complemento}
           placeholder="Digite o Complemento da entidade"
           onChange={handleComplementoChange}
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputCidade"
           type="text"
           value={Cidade}
           placeholder="Digite o Cidade da entidade"
           onChange={handleCidadeChange}
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputEstado"
           type="text"
           value={Estado}
           placeholder="Digite o Estado da entidade"
           onChange={handleEstadoChange}
         />
+        </div>
 
-        <input
+<br/>
+        <div>
+        <input className="divInputCep"
           type="text"
           value={Cep}
           placeholder="Digite o Cep da entidade"
           onChange={handleCepChange}
         />
+        </div>
 
         <button onClick={handleClickButton}>enviar</button>
       </div>

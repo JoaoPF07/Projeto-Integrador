@@ -12,30 +12,31 @@ export const api = {
     return json;
   },
 
-  AdicionarEntidade: async (
-    email: string,
-    senha: string,
-    nome: string,
-    cnpj: string,
-    endereco: string,
-    complemento: string,
-    cidade: string,
-    estado: string,
-    cep: string
-  ) => {
-    let response = await fetch("", {
-      method: "POST",
-      body: JSON.stringify({
-        email,
-        senha,
-        nome,
-        cnpj,
-        endereco,
-        complemento,
-        cidade,
-        estado,
-        cep,
-      }),
+                           AdicionarEntidade: async (
+                                        email: string,   
+                                        senha: string,
+                                        nome: string,
+                                        cnpj: string,
+                                        endereco: string,
+                                        complemento: string,
+                                        cidade: string,
+                                        estado: string,
+                                        cep: string
+                                        ) => {
+
+                  let response = await fetch("", {
+                    method: "POST",
+                    body: JSON.stringify({
+                      email,
+                      senha,
+                      nome,
+                      cnpj,
+                      endereco,
+                      complemento,
+                      cidade,
+                      estado,
+                      cep,
+                    }),
       headers: {
         "content-Type": "application/json",
       },
