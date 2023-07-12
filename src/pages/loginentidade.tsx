@@ -1,6 +1,5 @@
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Cabecalho from "../componentes/cabecalho";
 import Rodape from "../componentes/rodape";
 
 function LoginEntidade() {

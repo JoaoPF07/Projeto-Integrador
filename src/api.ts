@@ -1,42 +1,40 @@
 export const api = {
-
   CarregarEntidadeIndividual: async () => {
-    let response = await fetch("https://jsonplaceholder.typicode.com/todos/");
+    let response = await fetch("http://localhost:3000/entidades");
     let json = await response.json();
     return json;
   },
 
   CarregarTodasEntidades: async (param: string) => {
-    let response = await fetch("" + param);
+    let response = await fetch("http://localhost:3000/entidades" + param);
     let json = await response.json();
     return json;
   },
 
-                           AdicionarEntidade: async (
-                                        email: string,   
-                                        senha: string,
-                                        nome: string,
-                                        cnpj: string,
-                                        endereco: string,
-                                        complemento: string,
-                                        cidade: string,
-                                        estado: string,
-                                        cep: string
-                                        ) => {
-
-                  let response = await fetch("", {
-                    method: "POST",
-                    body: JSON.stringify({
-                      email,
-                      senha,
-                      nome,
-                      cnpj,
-                      endereco,
-                      complemento,
-                      cidade,
-                      estado,
-                      cep,
-                    }),
+  AdicionarEntidade: async (
+    email: string,
+    senha: string,
+    nome: string,
+    cnpj: string,
+    endereco: string,
+    complemento: string,
+    cidade: string,
+    estado: string,
+    cep: string
+  ) => {
+    let response = await fetch("http://localhost:3000/entidades", {
+      method: "POST",
+      body: JSON.stringify({
+        email,
+        senha,
+        nome,
+        cnpj,
+        endereco,
+       complemento,
+        cidade,
+        estado,
+        cep,
+      }),
       headers: {
         "content-Type": "application/json",
       },
@@ -48,15 +46,17 @@ export const api = {
   },
 
   AlterarEntidade: async (id: string) => {
-    let response = await fetch(
-      "https://jsonplaceholder.typicode.com/todos/" + id, {method: 'PUT'})
+    let response = await fetch("http://localhost:3000/entidades" + id, {
+      method: "PUT",
+    });
     let json = await response.json();
     return json;
   },
 
   DeletarEntidade: async (id: string) => {
-    let response = await fetch(
-      "https://jsonplaceholder.typicode.com/todos/" + id, {method: 'DELETE'})
+    let response = await fetch("http://localhost:3000/entidades" + id, {
+      method: "DELETE",
+    });
     let json = await response.json();
     return json;
   },

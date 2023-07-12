@@ -1,5 +1,6 @@
 
 export type Entidades = {
+    img: string
     email: string,
     senha: string,
     nome: string,
@@ -9,4 +10,5 @@ export type Entidades = {
     cidade: string,
     estado: string,
     cep: string
+    telefone: string
 }

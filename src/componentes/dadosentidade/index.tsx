@@ -8,26 +8,31 @@ function DadosEntidade({ dados }: Props) {
   return (
     <div>
       <div className="divlista">
-        {dados.email}
+        <div 
+         style={{
+          backgroundImage: `url('/imgdocontainer.png')`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }} className="imgContainer">
+        </div>
         <br />
-        {dados.senha}
+        <div className="divContainer">
+        <b>Nome: {dados.nome}</b>
         <br />
-        {dados.nome}
+        <b>Cidade:{dados.cidade}</b>
         <br />
-        {dados.cnpj}
+        <b>Estado:{dados.estado}</b>
         <br />
-        {dados.endereco}
+        Cep:{dados.cep}
         <br />
-        {dados.complemento}
+        Endereço:{dados.endereco}
         <br />
-        {dados.cidade}
+        Complemento:{dados.complemento}
         <br />
-        {dados.estado}
+        Telefone:{dados.telefone}
         <br />
-        {dados.cep}
-        <br />
-        {dados.cnpj}
-        <br />
+        </div>
       </div>
     </div>
   );

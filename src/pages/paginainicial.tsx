@@ -2,6 +2,7 @@ import "../estilo/estilo.css";
 import Carrossel from "../componentes/carrossel";
 import Cabecalho from "../componentes/cabecalho";
 import ContainerEntidade from "../componentes/containerentidade";
+import DadosEntidade from "../componentes/dadosentidade";
 
 function PaginaInicial() {
   return (
@@ -41,7 +42,7 @@ function PaginaInicial() {
             </div>
             <hr />
             <br />
-            <ContainerEntidade />
+            <ContainerEntidade/>
             <br />
           </div>
         </div>

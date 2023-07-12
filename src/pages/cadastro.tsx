@@ -1,8 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import { json } from "stream/consumers";
 import { api } from "../api";
-import FormPostEntidade from "../componentes/formpostentidade/formpostentidade";
+import FormPostEntidade from "../componentes/formpostcadentidade/formpostcadentidade";
 import { Entidades } from "../types/entidade";
 
 
@@ -11,6 +10,7 @@ function Cadastros() {
   const [Entidade, setEntidade] = useState <Entidades[]>([])
 
   const handleInserir = async (
+    
     email: string,
     senha: string,
     nome: string,
@@ -23,6 +23,7 @@ function Cadastros() {
   ) => {
 
     let json = await api.AdicionarEntidade(
+    
       email,
       senha,
       nome,

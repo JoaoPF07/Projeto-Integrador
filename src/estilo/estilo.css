@@ -74,9 +74,6 @@
 
 
 
-b {
-  color: #ffffff;
-}
 
 .mapa {
   background-color: red;
@@ -201,12 +198,8 @@ b {
 }
 
 .divFormCadastro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-top: 10px;
-  width: 400px;
-  margin: auto;
+  margin-left: 50px;
 }
 
 .divFundoCadastro {
@@ -215,11 +208,11 @@ b {
   justify-content: center;
   margin: auto;
   margin-bottom: 50px;
-  width: 500px;
-  height: 700px;
+  width: 600px;
+  height: 770px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1)
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .divGlobal {
@@ -258,9 +251,7 @@ b {
   font-size: 15px;
 }
 
-.botaocadastro {
-  width: 332px;
-}
+
 
 .divBotaoCadastro {
   display: flex;
@@ -275,14 +266,20 @@ b {
 
 .fundoPagLogCad {
   background-color: #b0e0e5;
-  height: 900px;
+  height: 950px;
 }
 
 .divlista {
-  border: 1px  solid black;
   border-radius: 8px;
-  width: 100px;
-  margin-bottom: 10px;
+  width: 300px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  box-shadow: 12px 11px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    width: 310px;
+    transition: 100ms ease-in-out;
+  }
 }
 
 .link {
@@ -300,11 +297,7 @@ b {
   flex-direction: row-reverse;
 }
 
-.divNav{
-  display: flex;
-  margin-right: 500px;
-  margin-bottom: 50px;
-}
+
 
 .ButtonNav {
   position: relative;
@@ -317,7 +310,6 @@ b {
   margin-right: 100px;
   margin-left: 150px;
   border-radius: 8px;
-  border: dotted #e25c5ced 3px;
   font-family: cursive;
 
 }
@@ -327,10 +319,9 @@ b {
   padding: 10px;
   border-radius: 8px;
   font-family: cursive;
-  border: dotted #e25c5ced 3px;
 }
 
-.divMenu2 :hover {
+.divMenu2:hover {
   background-color: white;
   padding: 10px;
   border-radius: 8px;
@@ -339,7 +330,7 @@ b {
 
 }
 
-.divMenu1 :hover {
+.divMenu1:hover {
   background-color: white;
   padding: 10px;
   border-radius: 8px;
@@ -348,7 +339,120 @@ b {
 
 }
 
+nav{
+  text-align: center;
+  margin-top: 50px;
+  }
+
+  nav .Link{
+    text-decoration: none;
+    color: black;
+    padding: 0 50px 10px 0;
+    font-size: 20px;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  nav .Link::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #b44e4e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  nav .Link:hover::after {
+    width: 100%;
 
 
+  }
+
+  input, select {
+    height: 8px;
+    border-radius: 8px;
+    padding: 20px 30px;
+    border: 1px solid #b0e0e5;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 2px rgb(168, 166, 166);
+
+    &:hover {
+     
+      border: 1px solid #49d0df;
+
+    }
+    &::placeholder{
+      color: #b0e0e5;
+    }
+
+    &:focus {
+      border: 2px solid #49d0df;
+      &::placeholder{
+        color: #33a4b1;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+  select {
+    height: 60px;
+  }
+
+  .inputEmailSenha {
+    width: 600px;
+    margin-bottom: 1em;
+  }
+
+  .inputEmailSenha [type="email"] {
+    margin-right: 10px;
+  }
+
+  .inputCampo1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+  }
 
 
+  .inputCidadeEstado {
+    margin-top: 1em;
+    width:50px ;
+  }
+
+  .inputEnderecoCep {
+    margin-top: 1em;
+    
+  }
+  #endereco {
+    margin-right: 10px;
+  }
+
+  .inputComplemento {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 500px;
+  }
+
+  .imgContainer {
+    margin: auto;
+    width: 300px;
+    height: 130px;
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+
+      &:hover {
+        width: 310px;
+        height: 140px;
+        transition: 100ms ease-in-out;
+      }
+ 
+  }
+
+  .divContainer {
+    padding: 10px;
+    text-align: left;
+    font-family: sans-serif;
+  }

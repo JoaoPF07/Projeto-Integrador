@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./../../estilo/estilo.css";
 
 type Props = {
@@ -8,10 +9,10 @@ type Props = {
 function Menu(menu: Props) {
   return (
     <div>
-      <div className="classediv">
-       <div className="divMenu1"> {menu.menu1}</div>
-       <div className="divMenu2">{menu.menu2}</div>
-      </div>
+      <nav className="Nav">
+        <Link className="Link" to={"/entidades"}>Entidades</Link>
+        <Link className="Link" to={"/cadastros"}>Área da entidade</Link>
+      </nav>
     </div>
   );
 }

@@ -14,7 +14,7 @@ function ContainerEntidade() {
     setLoading(true);
     try {
       let response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos/1"
+        "http://localhost:3000/entidades"
       );
       let json = await response.json();
 
