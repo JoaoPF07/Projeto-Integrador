@@ -29,7 +29,7 @@ function ContainerEntidade() {
   };
 
   return (
-    <div>
+    <div className="ContainerEntidade">
       {entidades.map((item, index) => (
         <DadosEntidade key={index} dados={item} />
       ))}

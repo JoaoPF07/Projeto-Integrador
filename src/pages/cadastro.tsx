@@ -14,6 +14,7 @@ function Cadastros() {
     email: string,
     senha: string,
     nome: string,
+    telefone: string,
     cnpj: string,
     endereco: string,
     complemento: string,
@@ -27,6 +28,7 @@ function Cadastros() {
       email,
       senha,
       nome,
+      telefone,
       cnpj,
       endereco,
       complemento,
@@ -36,10 +38,10 @@ function Cadastros() {
     );
 
     if(json.id) {
-      alert('Entidade cadastrada com sucesso!')
+      alert(json.message)
       setEntidade((Entidade) => [...Entidade, json]);
     }else {
-      alert ("Faha ao se cadastrar")
+      alert (json.message)
     }
 
 

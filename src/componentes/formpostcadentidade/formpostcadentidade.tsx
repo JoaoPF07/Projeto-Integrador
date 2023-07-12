@@ -6,6 +6,7 @@ type Props = {
     email: string,
     senha: string,
     nome: string,
+    telefone: string,
     cnpj: string,
     endereco: string,
     complemento: string,
@@ -19,6 +20,7 @@ function FormPostEntidade({ onAdd }: Props) {
   const [Email, setEmail] = useState("");
   const [Senha, setSenha] = useState("");
   const [Nome, setNome] = useState("");
+  const [Telefone, setTelefone] = useState("");
   const [Cnpj, setCnpj] = useState("");
   const [Endereco, setEndereco] = useState("");
   const [Complemento, setComplemento] = useState("");
@@ -36,6 +38,10 @@ function FormPostEntidade({ onAdd }: Props) {
 
   const handleNomeChange = (e: ChangeEvent<HTMLInputElement>) => {
     setNome(e.target.value);
+  };
+
+  const handleTelefoneChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setTelefone(e.target.value);
   };
 
   const handleCnpjChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -80,6 +86,7 @@ function FormPostEntidade({ onAdd }: Props) {
         Senha,
         Nome,
         Cnpj,
+        Telefone,
         Endereco,
         Complemento,
         Cidade,
@@ -127,11 +134,17 @@ function FormPostEntidade({ onAdd }: Props) {
             </fieldset>
           </div>
           <div className="inputCampo1">
+          <label htmlFor="telefone">Telefone</label>
+            <input type="text"
+            value={Telefone}
+            placeholder="Telefone" 
+            onChange={handleTelefoneChange}
+              />
             <label htmlFor="cnpj">Cnpj</label>
             <input
               type="text"
               value={Cnpj}
-              placeholder="Digite o Cnpj da entidade"
+              placeholder="Cnpj"
               onChange={handleCnpjChange}
               required
             />

@@ -456,3 +456,8 @@ nav{
     text-align: left;
     font-family: sans-serif;
   }
+
+  .ContainerEntidade{
+    display: flex;
+    
+  }

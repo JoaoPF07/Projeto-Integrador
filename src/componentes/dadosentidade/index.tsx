@@ -6,7 +6,7 @@ type Props = {
 
 function DadosEntidade({ dados }: Props) {
   return (
-    <div>
+    <div className="ContainerEntidade">
       <div className="divlista">
         <div 
          style={{
@@ -24,13 +24,13 @@ function DadosEntidade({ dados }: Props) {
         <br />
         <b>Estado:{dados.estado}</b>
         <br />
-        Cep:{dados.cep}
+        <b>Cep:{dados.cep}</b>
         <br />
-        Endereço:{dados.endereco}
+        <b>Endereço: {dados.endereco}</b>
         <br />
-        Complemento:{dados.complemento}
+        <b>Complemento: {dados.complemento}</b>
         <br />
-        Telefone:{dados.telefone}
+        <b>Telefone:{dados.telefone}</b>
         <br />
         </div>
       </div>
