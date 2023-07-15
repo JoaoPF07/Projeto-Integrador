@@ -463,3 +463,13 @@ nav{
     display: flex;
     
   }
+
+  .divLogin {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: auto;
+    margin-bottom: 55px;
+  }
+  
+  

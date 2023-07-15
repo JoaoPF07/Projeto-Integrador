@@ -21,9 +21,11 @@ const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
 const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSenha(e.target.value);
   };
-  
+
   return <div>
         <form>
+            <div className="divLogin">
+            <label htmlFor="email">Email</label>
             <input
              type="email"
              value={Email}
@@ -31,12 +33,14 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
              onChange={handleEmailChange}
              required
             />
+            <label htmlFor="senha">Senha</label>
             <input
              type="text"
              value={Senha}
              placeholder = "Senha"
              onChange={handleSenhaChange} 
              required/>
+             </div>
         </form>
   </div>;
 }
