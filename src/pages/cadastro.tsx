@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import { api } from "../api";
-import FormPostEntidade from "../componentes/formpostcadentidade/formpostcadentidade";
+import FormPostCadEntidade from "../componentes/formpostcadentidade/formpostcadentidade";
 import { Entidades } from "../types/entidade";
 
 
@@ -62,10 +62,10 @@ function Cadastros() {
         <div className="divFundoCadastro">
           <div className="divtextocadastro">
             <div className="textocadastro1">Cadastre sua ONG aqui!</div>
-            <div className="textocadastro2">É rapido e fácil</div>
+            <div className="textocadastro2">É rápido e fácil</div>
           </div>
           <div>
-            <FormPostEntidade onAdd={handleInserir}/>
+            <FormPostCadEntidade onAdd={handleInserir}/>
           </div>
         </div>
       </div>

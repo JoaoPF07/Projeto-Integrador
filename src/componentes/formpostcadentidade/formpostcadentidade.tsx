@@ -16,7 +16,7 @@ type Props = {
   ) => void;
 };
 
-function FormPostEntidade({ onAdd }: Props) {
+function FormPostCadEntidade({ onAdd }: Props) {
   const [Email, setEmail] = useState("");
   const [Senha, setSenha] = useState("");
   const [Nome, setNome] = useState("");
@@ -103,11 +103,11 @@ function FormPostEntidade({ onAdd }: Props) {
       <div className="divFormCadastro">
         <form>
           <div className="inputCampo1">
-            <label htmlFor="nome">Nome da Ong</label>
+            <label htmlFor="nome">Nome da ONG</label>
             <input
               type="text"
               value={Nome}
-              placeholder="Digite o email da entidade"
+              placeholder="Nome da ONG"
               onChange={handleNomeChange}
               required
             />
@@ -120,14 +120,14 @@ function FormPostEntidade({ onAdd }: Props) {
               <input
                 type="email"
                 value={Email}
-                placeholder="Digite a senha da entidade"
+                placeholder="Email"
                 onChange={handleEmailChange}
                 required
               />
               <input
                 type="password"
                 value={Senha}
-                placeholder="Digite o nome da entidade"
+                placeholder="Senha"
                 onChange={handleSenhaChange}
                 required
               />
@@ -139,12 +139,13 @@ function FormPostEntidade({ onAdd }: Props) {
             value={Telefone}
             placeholder="Telefone" 
             onChange={handleTelefoneChange}
+            required
               />
-            <label htmlFor="cnpj">Cnpj</label>
+            <label htmlFor="cnpj">CNPJ</label>
             <input
               type="text"
               value={Cnpj}
-              placeholder="Cnpj"
+              placeholder="CNPJ"
               onChange={handleCnpjChange}
               required
             />
@@ -203,20 +204,20 @@ function FormPostEntidade({ onAdd }: Props) {
           </div>
           <div className="inputEnderecoCep">
             <fieldset>
-              <label>Endereço e Cep</label>
+              <label>Endereço e CEP</label>
 <br />
               <input
               id="endereco"
                 type="text"
                 value={Endereco}
-                placeholder="Digite o Cidade da entidade"
+                placeholder="Endereço"
                 onChange={handleEnderecoChange}
                 required
               />
               <input
                 type="text"
                 value={Cep}
-                placeholder="Digite o Estado da entidade"
+                placeholder="CEP"
                 onChange={handleCepChange}
                 required
               />
@@ -229,7 +230,7 @@ function FormPostEntidade({ onAdd }: Props) {
             <input
               type="text"
               value={Complemento}
-              placeholder="Digite o Cep da entidade"
+              placeholder="Complemento"
               onChange={handleComplementoChange}
               required
             />
@@ -245,4 +246,4 @@ function FormPostEntidade({ onAdd }: Props) {
   );
 }
 
-export default FormPostEntidade;
+export default FormPostCadEntidade;

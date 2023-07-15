@@ -158,10 +158,10 @@
 }
 
 .textologin {
-  display: flex;
-  font-size: 18px;
   text-align: center;
-  font-family: monospace;
+  font-size: 16px;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .divTextoLogin {
@@ -170,6 +170,7 @@
   flex-direction: row;
   align-items: center;
   margin-top: 10px;
+  margin-right: 4em;
   margin-left: 250px;
   padding: 2px 0px 5px;
   width: 396px;
@@ -236,6 +237,7 @@
   padding-bottom: 20px;
   height: 76px;
   border-bottom: 1px solid #dddfe2;
+  margin: auto;
 }
 
 .textocadastro1 {
