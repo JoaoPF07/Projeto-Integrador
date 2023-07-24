@@ -1,6 +1,6 @@
 import Cabecalho from "../componentes/cabecalho";
 
-function UserEntidade () {
+function Entidades () {
     
     return (
         <div>
@@ -14,4 +14,4 @@ function UserEntidade () {
 
 }
 
-export default UserEntidade;
+export default Entidades;

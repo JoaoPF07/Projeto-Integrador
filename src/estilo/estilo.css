@@ -472,4 +472,33 @@ nav{
     margin-bottom: 55px;
   }
   
-  
+.divNomeEnt {
+  margin-top: 10px;
+  margin-left: 9.5em;
+  font-family: monospace;
+  font-size: 20px;
+}  
+
+.imgPerfil {
+  margin-top: 1em;
+  margin-left: 5em;
+  border-radius: 8px;
+  width: 250px;
+  height: 230px;
+}
+
+#divflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.infPerfil {
+  margin-top: 20px;
+  margin-left: 7em;
+  font-family: monospace;
+}
+
+.fundoPerfil {
+  background-color: #E6FDFF;
+}
+

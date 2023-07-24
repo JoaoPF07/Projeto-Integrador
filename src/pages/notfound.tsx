@@ -1,4 +1,3 @@
-import Rodape from "../componentes/rodape";
 
 function NotFound() {
   return (
