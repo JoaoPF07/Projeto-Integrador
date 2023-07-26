@@ -1,15 +1,17 @@
+import BioEntidade from "../componentes/bioentidade/bioentidade";
 import Cabecalho from "../componentes/cabecalho";
+import InfoEntidade from "../componentes/infoentidade/infoentidade";
 
 function DetalhamentoEntidade() {
   return (
-    <div className="fundoPerfil">
+    <div>
       <Cabecalho />
       <div className="divNomeEnt">
         <b>Nome Entidade</b>
       </div>
-      <div id="divflex">
+      <div className="divflex">
         <div
-          style={{ 
+          style={{
             backgroundImage: `url('/imgdocontainer.png')`,
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -17,31 +19,12 @@ function DetalhamentoEntidade() {
           }}
           className="imgPerfil"
         ></div>
-        <div className="infPerfil">
-          <b>Email:</b>
-          <br />
-          <br />
-          <b>Telefone:</b>
-          <br />
-          <br />
-          <b>Cpnj:</b>
-        </div>
-          <div className="infPerfil">
-          <b>Cidade:</b>
-          <br />
-          <br />
-          <b>Estado:</b>
-          <br />
-          <br />
-          <b>Endereço:</b>
-          </div>
-          <div className="infPerfil">
-          <b>Cep:</b>
-          <br />
-          <br />
-          <b>Complemento:</b>
-          </div>
+        <BioEntidade />
       </div>
+      <div className="divflex">
+      <InfoEntidade/>
+      </div>
+
     </div>
   );
 }
