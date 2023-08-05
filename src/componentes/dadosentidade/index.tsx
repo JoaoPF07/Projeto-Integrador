@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Entidades } from "../../types/entidade";
 
 type Props = {
@@ -7,6 +8,8 @@ type Props = {
 function DadosEntidade({ dados }: Props) {
   return (
     <div className="ContainerEntidade">
+      <Link className="link" to={"/perfil-entidade"}>
+
       <div className="divlista">
         <div 
          style={{
@@ -34,6 +37,7 @@ function DadosEntidade({ dados }: Props) {
         <br />
         </div>
       </div>
+      </Link>
     </div>
   );
 }

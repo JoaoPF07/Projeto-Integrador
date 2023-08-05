@@ -1,30 +1,49 @@
-import BioEntidade from "../componentes/bioentidade/bioentidade";
+import { useState, useEffect } from "react";
 import Cabecalho from "../componentes/cabecalho";
 import InfoEntidade from "../componentes/infoentidade/infoentidade";
+import PerfilEntidade from "../componentes/perfilentidade/perfilentidade";
+import { Entidades } from "../types/entidade";
+
 
 function DetalhamentoEntidade() {
+
+  const [entidades, setEntidades] = useState<Entidades[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    carregarEntidades();
+  }, []);
+
+  const carregarEntidades = async () => {
+    setLoading(true);
+    try {
+      let response = await fetch(
+        "http://localhost:3000/entidades"
+      );
+      let json = await response.json();
+
+      const dataArray = Array.isArray(json) ? json : [json];
+
+      setEntidades(dataArray);
+    } catch (e) {
+      alert("Falha no carregamento das informações");
+      setLoading(false);
+      console.error(e);
+    }
+  };
+  
   return (
     <div>
       <Cabecalho />
-      <div className="divNomeEnt">
-        <b>Nome Entidade</b>
-      </div>
-      <div className="divflex">
-        <div
-          style={{
-            backgroundImage: `url('/imgdocontainer.png')`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-          className="imgPerfil"
-        ></div>
-        <BioEntidade />
-      </div>
-      <div className="divflex">
-      <InfoEntidade/>
-      </div>
+      {entidades.map((item, index) => (
+        <PerfilEntidade key={index} dados={item}/>
+      ))}
+       {entidades.map((item, index) => (
+        <InfoEntidade key={index} dados={item}/>
+      ))}
+      
 
+      
     </div>
   );
 }

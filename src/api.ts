@@ -1,6 +1,6 @@
 export const api = {
-  CarregarEntidadeIndividual: async () => {
-    let response = await fetch("http://localhost:3000/entidades");
+  CarregarEntidadeIndividual: async (nome: string) => {
+    let response = await fetch("http://localhost:3000/entidades" + nome);
     let json = await response.json();
     return json;
   },

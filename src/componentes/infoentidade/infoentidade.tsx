@@ -1,29 +1,36 @@
-function InfoEntidade() {
+import { Entidades } from "../../types/entidade";
+
+type Props = {
+  dados: Entidades;
+};
+
+
+function InfoEntidade({ dados }: Props) {
   return (
     <div className="divflex">
       <div className="infPerfil">
         <div className="divcoluna">
-        <b>Email:</b>
+        <b>Email:{dados.email}</b>
         <br />
-        <b>Telefone:</b>
+        <b>Telefone:{dados.telefone}</b>
         <br />
-        <b>Cpnj:</b>
+        <b>Cpnj:{dados.cnpj}</b>
         </div>
       </div>
       <div className="infPerfil">
         <div className="divcoluna">
-        <b>Cidade:</b>
+        <b>Cidade:{dados.cidade}</b>
         <br />
-        <b>Estado:</b>
+        <b>Estado: {dados.estado}</b>
         <br />
-        <b>Endereço:</b>
+        <b>Endereço: {dados.endereco}</b>
       </div>
       </div>
       <div className="infPerfil">
         <div className="divcoluna">
         <b>Cep:</b>
         <br />
-        <b>Complemento:</b>
+        <b>Complemento: {dados.complemento}</b>
         </div>
 
       </div>

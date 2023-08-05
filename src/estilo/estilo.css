@@ -286,6 +286,11 @@
 
 .link {
   text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: black;
+  }
 }
 
 
@@ -473,24 +478,26 @@ nav{
   }
   
 .divNomeEnt {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
-  margin-left: 9.5em;
+  margin-bottom: 10px;
   font-family: monospace;
   font-size: 20px;
 }  
 
 .imgPerfil {
-  margin-top: 1em;
-  margin-left: 5em;
+  margin: auto;
   border-radius: 8px;
-  width: 250px;
-  height: 230px;
+  width: 700px;
+  height: 250px;
 }
 
 .divflex {
   display: flex;
   flex-direction: row;
-  width: 1000px;
+  margin: auto;
+
 }
 
 .infPerfil {
@@ -509,6 +516,8 @@ nav{
 .divBio {
   display: flex;
   margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
   justify-content: center;
   border: black solid 1px;
   border-radius: 8px;
@@ -519,4 +528,5 @@ nav{
 .divcoluna {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3em;
 }
