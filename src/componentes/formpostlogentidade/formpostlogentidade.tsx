@@ -1,18 +1,13 @@
-import { ChangeEvent, useState } from "react";
-
-type Props = {
-  onAdd: (
-    email: string,
-    senha: string
-) => void;
-};
+import { ChangeEvent, useContext, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
+import { api } from "../../api";
 
 
 
 function FormPostLogEntidade() {
-
-    const [Email, setEmail] = useState ("");
-const [Senha, setSenha] = useState ("");
+  const navigate = useNavigate ();
+  const [email, setEmail] = useState ("");
+  const [senha, setSenha] = useState ("");
 
 const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -22,26 +17,40 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSenha(e.target.value);
   };
 
+
+  const Realizarlogin = async () => {
+    
+    let json = await api.Logar(email, senha);
+
+    alert(json.userId);
+
+    if (json.userId) {
+    alert ('Bem-vindo ' + email);
+    navigate('/');
+  }else {
+    alert ('Usuário/Senha não encontrado!')
+  }
+  };
+
   return <div>
-        <form>
             <div className="divLogin">
             <label htmlFor="email">Email</label>
             <input
              type="email"
-             value={Email}
+             value={email}
              placeholder = "Email"
              onChange={handleEmailChange}
              required
             />
             <label htmlFor="senha">Senha</label>
             <input
-             type="text"
-             value={Senha}
+             type="password"
+             value={senha}
              placeholder = "Senha"
              onChange={handleSenhaChange} 
              required/>
              </div>
-        </form>
+             <button onClick={Realizarlogin}>Logar</button>
   </div>;
 }
 

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import Cabecalho from "../componentes/cabecalho";
+import DadosEntidade from "../componentes/dadosentidade";
 import InfoEntidade from "../componentes/infoentidade/infoentidade";
 import PerfilEntidade from "../componentes/perfilentidade/perfilentidade";
 import { Entidades } from "../types/entidade";
-
+import { api } from "../api";
 
 function DetalhamentoEntidade() {
 
@@ -18,7 +19,7 @@ function DetalhamentoEntidade() {
     setLoading(true);
     try {
       let response = await fetch(
-        "http://localhost:3000/entidades"
+        "http://localhost:3010/entidades"
       );
       let json = await response.json();
 
@@ -39,7 +40,7 @@ function DetalhamentoEntidade() {
         <PerfilEntidade key={index} dados={item}/>
       ))}
        {entidades.map((item, index) => (
-        <InfoEntidade key={index} dados={item}/>
+        <InfoEntidade key={index} dados={item} />
       ))}
       
 

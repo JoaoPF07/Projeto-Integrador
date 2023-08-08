@@ -2,6 +2,7 @@ import { Entidades } from "../../types/entidade";
 
 type Props = {
   dados: Entidades;
+
 };
 
 
