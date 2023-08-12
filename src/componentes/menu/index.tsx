@@ -9,7 +9,7 @@ type Props = {
 function Menu(menu: Props) {
   return (
     <div>
-      <nav className="Nav">
+      <nav>
         <Link className="Link" to={"/entidades"}>Entidades</Link>
         <Link className="Link" to={"/cadastros"}>Área da entidade</Link>
       </nav>

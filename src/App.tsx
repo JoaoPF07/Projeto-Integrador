@@ -5,7 +5,8 @@ import LoginEntidade from "./pages/loginentidade";
 import Cadastros from "./pages/cadastro";
 import PaginaInicial from "./pages/paginainicial";
 import AreaEntidade from "./pages/areaentidade";
-import UserEntidade from "./pages/userentidade";
+import Entidades from "./pages/entidades";
+import DetalhamentoEntidade from "./pages/detalhamentoentidade";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/login-entidade" element={<LoginEntidade />} />
           <Route path="/cadastros" element={<Cadastros />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/entidades" element= {<UserEntidade/>}/>
+          <Route path="/entidades" element= {<Entidades/>}/>
+          <Route path="/perfil-entidade/:nome?" element= {<DetalhamentoEntidade />}/>
         </Routes>
       </div>
     </div>
