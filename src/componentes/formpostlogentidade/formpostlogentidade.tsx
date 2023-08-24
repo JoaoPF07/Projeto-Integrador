@@ -1,13 +1,14 @@
 import { ChangeEvent, useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { api } from "../../api";
+import { UsuarioLogadoContext } from "../../contexts/contextAuth";
 
 
 
 function FormPostLogEntidade() {
   const navigate = useNavigate ();
-  const [email, setEmail] = useState ("");
-  const [senha, setSenha] = useState ("");
+  const [femail, setEmail] = useState ("");
+  const [fsenha, setSenha] = useState ("");
 
 const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -17,15 +18,18 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSenha(e.target.value);
   };
 
+    const UsuatioLogadoCtx = useContext (UsuarioLogadoContext);
+
 
   const Realizarlogin = async () => {
     
-    let json = await api.Logar(email, senha);
+    let json = await api.Logar(femail, fsenha);
 
     alert(json.userId);
 
     if (json.userId) {
-    alert ('Bem-vindo ' + email);
+    alert ('Bem-vindo ' + femail);
+    UsuatioLogadoCtx?.setName(femail)
     navigate('/');
   }else {
     alert ('Usuário/Senha não encontrado!')
@@ -37,7 +41,7 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
             <label htmlFor="email">Email</label>
             <input
              type="email"
-             value={email}
+             value={femail}
              placeholder = "Email"
              onChange={handleEmailChange}
              required
@@ -45,7 +49,7 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
             <label htmlFor="senha">Senha</label>
             <input
              type="password"
-             value={senha}
+             value={fsenha}
              placeholder = "Senha"
              onChange={handleSenhaChange} 
              required/>

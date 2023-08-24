@@ -14,7 +14,7 @@ function ContainerEntidade() {
     setLoading(true);
     try {
       let response = await fetch(
-        "http://localhost:3000/entidades"
+        "http://localhost:3010/entidades"
       );
       let json = await response.json();
 

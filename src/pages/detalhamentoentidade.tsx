@@ -12,10 +12,10 @@ function DetalhamentoEntidade() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    carregarEntidades();
+    CarregarEntidadeIndividual();
   }, []);
 
-  const carregarEntidades = async () => {
+  const CarregarEntidadeIndividual = async () => {
     setLoading(true);
     try {
       let response = await fetch(

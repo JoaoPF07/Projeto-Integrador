@@ -1,4 +1,5 @@
 import Cabecalho from "../componentes/cabecalho";
+import ContainerEntidade from "../componentes/containerentidade";
 
 function Entidades () {
     
@@ -6,6 +7,7 @@ function Entidades () {
         <div>
             <div>
                 <Cabecalho/>
+                <ContainerEntidade/>
             </div>
 
         </div>

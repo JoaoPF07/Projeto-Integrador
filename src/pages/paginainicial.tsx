@@ -3,9 +3,30 @@ import Carrossel from "../componentes/carrossel";
 import Cabecalho from "../componentes/cabecalho";
 import ContainerEntidade from "../componentes/containerentidade";
 import DadosEntidade from "../componentes/dadosentidade";
+import { useContext } from "react";
+import { UsuarioLogadoContext } from "../contexts/contextAuth";
 
 function PaginaInicial() {
+
+    const UsuarioLogadoCtx = useContext(UsuarioLogadoContext);
+
   return (
+    <div>
+{(!UsuarioLogadoCtx?.name || UsuarioLogadoCtx?.name === null ) && 
+    
+  (
+    <>
+    <h1>Usuário sem permissão</h1>
+    </>
+  )
+
+  }
+
+  {UsuarioLogadoCtx?.name  && 
+    
+  <>
+  
+    
     <div>
       <div>
         <div>
@@ -47,6 +68,9 @@ function PaginaInicial() {
           </div>
         </div>
       </div>
+    </div>
+    </>
+  }
     </div>
   );
 }
